@@ -1,0 +1,110 @@
+<p> tag:
+The <p> tag in HTML defines a paragraph. These have both opening and closing tag. So anything mentioned within <p> and </p> is treated as a paragraph. Most browsers read a line as a paragraph even if we don’t use the closing tag i.e, </p>, but this may raise unexpected results. So, it is both a good convention and we must use the closing tag.
+Syntax:
+ <p> Content </p> 
+Example:
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Paragraph</title> 
+</head> 
+<body> 
+    <p>A Computer Science portal for geeks.</p> 
+    <p>It contains well written, well thought articles.</p> 
+</body> 
+</html> 
+Output:
+When we look at the webpage, we see that there are few spaces added before and after a paragraph. HTML does this by default. Let’s look at few properties of paragraph tag:
+As already mentioned, the<p>tag automatically adds space before and after any paragraph, which is basically margins added by the browser.
+If a user adds multiple spaces, the browser reduces them it to a single space.
+If a user adds multiple lines, the browser reduces them to a single line.
+Example:
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Display_Paragraph</title> 
+</head> 
+<body> 
+    <p> 
+    This paragraph has multiple 
+    lines. But HTML reduces them 
+    to a single line, omitting 
+    the carriage return we have used. 
+    </p>       
+    <p> 
+    This paragraph    has multiple spaces. But HTML reduces them all to a single space,omitting 
+    the extra spaces and line   we have used. </p> 
+</body> 
+</html> 
+Output:
+<br> tag:
+There is a way to let the HTML know where does the browser need to change the lines by the use of <br> tag. These tags do not have any closing tag. So, just a single opening tag will change the line.
+Syntax:
+ <br> 
+Example:
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Display_Paragraph</title> 
+</head> 
+<body> 
+    <p> 
+    This paragraph has multiple<br>lines.  
+    But HTML reduces them<br>to a single 
+    line, omitting<br>the carriage return 
+    we have used. 
+    </p> 
+</body> 
+</html> 
+Output:
+<align> attribute:
+The <p> tag specifically supports the alignment attribute and allows us to align our paragraphs in left, right or center alignment.
+Syntax:
+<p align="value">
+Example:
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Paragraph</title> 
+</head> 
+<body> 
+    <p align="center">Welcome Geeks</p> 
+    <p align="left">A Computer Science  
+                  portal for geeks.</p> 
+    <p align="right">It contains well 
+    written, well thought articles.</p> 
+</body> 
+</html> 
+Output:
+The <pre> element:
+We have seen how the paragraph tag ignores all the change of lines and extra spaces within a paragraph, but there is a way to preserve this by the use of <pre> tag. It also contains an opening and a closing tag. It displays a text within a fixed height and width and preserves the extra lines and spaces we use.
+Syntax:
+ <pre> Content </pre> 
+Example:
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Display_Paragraph</title> 
+</head> 
+<body> 
+    <pre> 
+    This paragraph has multiple 
+    lines. But it is displayed  
+    as it is unlike the paragraph  
+    tag. 
+    </pre>    
+    <pre> 
+    This     paragraph has multiple 
+    spaces. But     it is displayed  
+    as it is    unlike the paragraph  
+         tag. 
+    </pre> 
+</body> 
+</html> 
+Output:
+Supported Browsers: Supported browsers are listed below
+    Google Chrome
+    Internet Explorer
+    Firefox
+    Opera
+    Safari
